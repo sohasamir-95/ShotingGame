@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+  
+    <title>ShootingBoxes</title>
+     
+</head>
+<body>
+  <div class="homepage">
+     <h4><span id="hp">Cr</span>azyBa<span id="hp">nana</h4>
+     
+      <form id="AC" action="final.html">
+          <input type="text" id="sd" placeholder="Enter Player Name" class="ip"><br>
+
+          <input type="submit" id="start"  value="start"/>
+      </form>
+
+  </div>
+  <script>
+      var val=document.querySelector('#sd');
+      var valInput=document.querySelector('#start');
+      valInput.addEventListener('click',function(){
+          var nm=val.value;
+          localStorage.setItem("sm",nm);  
+      })
+  </script>
+ 
+</body>
+</html>
